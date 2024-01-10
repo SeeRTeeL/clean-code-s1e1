@@ -49,12 +49,12 @@
 }
 
 .menu-item {
-  list-style:none;
+  list-style: none;
 }
 
 .item__input,
 .item__button {
-  outline:none;
+  outline: none;
 }
 
 .item__button {
@@ -149,14 +149,14 @@
 
 /* Edit Task */
 .menu-item .item__input {
-  display:none
+  display: none
 }
 
 .menu-item--edit .item__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .menu-item--edit .item__title {
-  display:none;
+  display: none;
 }
