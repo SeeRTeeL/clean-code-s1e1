@@ -1,58 +1,66 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Todo App</title>
+  <title> Todo App </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="page">
-  <div class="hero">
+  <header class="hero">
     <img class="hero__image" src="./eisenhower-matrix.jpg">
-    <a class="hero__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main-container">
-    <p class="add-section">
-      <label class="add-section__title title">Add Item</label>
-    <div class="add-section__wrapper">
-      <input class="add-section__input item__input" type="text">
-      <button class="add-section__button item__button">Add</button>
-    </div>
-    </p>
-    <h3 class="title">Todo</h3>
-    <ul class="todo-menu">
-      <li class="todo-menu__item menu-item">
-        <input class="checkbox" type="checkbox">
-        <label class="item__title">Pay Bills</label>
-        <input class="item__input" type="text">
-        <button class="item__button item__button--edit">Edit</button>
-        <button class="item__button item__button--delete">
-          <img class="item__icon item__icon--delete" src="./remove.svg">
-        </button>
-      </li>
-      <li class="todo-menu__item menu-item menu-item--edit">
-        <input class="checkbox" type="checkbox">
-        <label class="item__title">Go Shopping</label>
-        <input class="item__input" type="text" value="Go Shopping">
-        <button class="item__button item__button--edit">Save</button>
-        <button class="item__button item__button--delete">
-          <img class="item__icon item__icon--delete" src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-    <h3 class="title">Completed</h3>
-    <ul class="completed-menu">
-      <li class="complited-menu__item menu-item">
-        <input class="checkbox" type="checkbox" checked>
-        <label class="item__title">See the Doctor</label>
-        <input class="item__input" type="text">
-        <button class="item__button item__button--edit">Edit</button>
-        <button class="item__button item__button--delete">
-          <img class="item__icon item__icon--delete" src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-  </div>
+    <a class="hero__link" href="https://goal-life.com/page/method/matrix-eisenhower"> Want more details? </a>
+  </header>
+  <main class="main-container">
+    <h1 class="main__title"> TODO list </h1>
+    <section class="add-section">
+      <h2 class="add-section__title title"> Add Item </h2>
+      <div class="add-section__wrapper">
+        <input class="add-section__input item__input" type="text">
+        <button class="add-section__button item__button"> Add </button>
+      </div>
+    </section>
+    <section class="todo-section">
+      <h2 class="title"> Todo </h2>
+      <ul class="todo-menu">
+        <li class="todo-menu__item menu-item">
+          <input class="checkbox" type="checkbox">
+          <label class="item__title"> Pay Bills </label>
+          <input class="item__input" type="text">
+          <button class="item__button item__button--edit"> Edit </button>
+          <button class="item__button item__button--delete">
+            <img class="item__icon item__icon--delete" src="./remove.svg">
+          </button>
+        </li>
+        <li class="todo-menu__item menu-item menu-item--edit">
+          <input class="checkbox" type="checkbox">
+          <label class="item__title"> Go Shopping </label>
+          <input class="item__input" type="text" value="Go Shopping">
+          <button class="item__button item__button--edit"> Save </button>
+          <button class="item__button item__button--delete">
+            <img class="item__icon item__icon--delete" src="./remove.svg">
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="completed-section">
+      <h2 class="title"> Completed </h2>
+      <ul class="completed-menu">
+        <li class="complited-menu__item menu-item">
+          <input class="checkbox" type="checkbox" checked>
+          <label class="item__title"> See the Doctor </label>
+          <input class="item__input" type="text">
+          <button class="item__button item__button--edit"> Edit </button>
+          <button class="item__button item__button--delete">
+            <img class="item__icon item__icon--delete" src="./remove.svg">
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
   <script src="app.js"></script>
 </body>
 
